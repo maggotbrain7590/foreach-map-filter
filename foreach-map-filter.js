@@ -41,7 +41,11 @@ Examples:
 
 */
 function showFirstAndLast(arr){
-    
+    let firstAndLast = [];
+    arr.forEach(function(word){
+        firstAndLast.push(word[0] + word[word.length -1]);
+    })
+    return firstAndLast;
 }
 
 /*
